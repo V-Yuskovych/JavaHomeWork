@@ -12,6 +12,9 @@ public class Interval {
         if (operand >= 101) {
             System.out.println("Число не попадает в один из имеющихся промежутков");
         }
+        if (operand < 0) {
+            System.out.println("Число не попадает в один из имеющихся промежутков");
+        }
         if (operand >= 0 && operand <= 14) {
             System.out.println("Промежуток [0 - 14]");
         }
