@@ -15,35 +15,35 @@ public class Anagram {
         System.out.println("Введите вторую строку: ");
         string2 = scanner.nextLine();
 
-        String string1OnlyChar = onlyNumbersAndLetters(string1);
-        String string2OnlyChar = onlyNumbersAndLetters(string2);
+        String stringNumbersAndLetters1 = onlyNumbersAndLetters(string1);
+        String stringNumbersAndLetters2 = onlyNumbersAndLetters(string2);
 
-        System.out.println("Строки анограммы: " + anagramOrNot(string1OnlyChar, string2OnlyChar));
+        System.out.println("Строки анограммы: " + anagramOrNot(stringNumbersAndLetters1, stringNumbersAndLetters2));
 
     }
 
     public static String onlyNumbersAndLetters(String string) {
         StringBuilder strB = new StringBuilder();
-        String chars1 = string.toLowerCase(Locale.ROOT);
+        String string3 = string.toLowerCase(Locale.ROOT);
 
         for (int i = 0; i < string.length(); i++) {
-            if (Character.isLetterOrDigit(chars1.charAt(i))) {
-                strB.append(chars1.charAt(i));
+            if (Character.isLetterOrDigit(string3.charAt(i))) {
+                strB.append(string3.charAt(i));
             }
         }
         return strB.toString();
     }
 
-    public static boolean anagramOrNot(String string1OnlyChar, String string2OnlyChar) {
-        char[] char1 = string1OnlyChar.toCharArray();
-        char[] char2 = string2OnlyChar.toCharArray();
+    public static boolean anagramOrNot(String string4, String string5) {
+        char[] char1 = string4.toCharArray();
+        char[] char2 = string5.toCharArray();
 
         Arrays.sort(char1);
         Arrays.sort(char2);
 
-        String ch1 = new String(char1);
-        String ch2 = new String(char2);
+        String string6 = new String(char1);
+        String string7 = new String(char2);
 
-        return ch1.equals(ch2);
+        return string6.equals(string7);
     }
 }
