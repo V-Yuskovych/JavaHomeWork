@@ -1,0 +1,13 @@
+[ {
+  "name" : "Vitaliy\tYuskovych",
+  "dateBirthday" : "1995-11-11",
+  "phone" : [ 3805000 ],
+  "address" : "Kharkiv",
+  "dateEdit" : "2021-12-15_20:09:03"
+}, {
+  "name" : "Serg",
+  "dateBirthday" : "1999-10-22",
+  "phone" : [ 3805003 ],
+  "address" : "Dnipro",
+  "dateEdit" : "2021-12-15_20:09:33"
+} ]
